@@ -7,6 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hola mundo</h1>
+    <h1>Mi pagina web</h1>
+    {% block content %}
+        <ul>
+            {% for categoria in categorias %}
+            <li>{{ categoria.nombre }}</li>
+            {% endfor %}
+
+        </ul>
+    {% endblock %}
+    
 </body>
 </html>

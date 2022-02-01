@@ -1,0 +1,9 @@
+{% extends "templates/index.html" %}
+{% block content %}
+        <ul>
+            {% for producto in productos %}
+            <li>{{ producto.nombre }} / {{ producto.categoria }} / {{ producto.pvp }}</li>
+            {% endfor %}
+
+        </ul>
+    {% endblock %}
