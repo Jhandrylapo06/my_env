@@ -1,9 +1,11 @@
 {% extends "templates/index.html" %}
 {% block content %}
-        <ul>
-            {% for producto in productos %}
+    <a href="{% url 'erp:vista1' %}">Click</a>
+    
+    <ul>
+        {% for producto in productos %}
             <li>{{ producto.nombre }} / {{ producto.categoria }} / {{ producto.pvp }}</li>
-            {% endfor %}
+        {% endfor %}
 
         </ul>
-    {% endblock %}
+{% endblock %}
